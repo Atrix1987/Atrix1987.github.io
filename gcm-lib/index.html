@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Android GCM Client library">
     <meta name="author" content="Abhishek Nandi">
+    <meta name="tag" content="">
 
     <title>Abhishek Nandi</title>
 
@@ -59,9 +60,19 @@
                 </div>
                 <div class="col-lg-12">
                     <h2>Adding the library to your android project</h2>
-                        <code>
-                        compile 'com.nandi:gcm-lib:1.0.1'
-                        </code>
+                    <pre>
+                    <code>
+repositories {
+    maven {
+        url 'https://dl.bintray.com/atrix1987/maven/'
+    }
+}
+
+dependencies {
+    compile 'com.nandi:gcm-lib:1.0.1'
+}
+                    </code>
+                    </pre>
                 </div>
                 <div class="col-lg-12">
                     <h2>Integrating the library is just 3 lines of code</h2>
